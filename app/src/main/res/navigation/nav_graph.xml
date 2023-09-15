@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="my.CakeDelight.presentation.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_cakesListFragment"
+            app:destination="@id/cakesListFragment"
+            app:popUpTo="@id/startFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_startFragment_to_historyFragment"
+            app:destination="@id/historyFragment"
+            app:popUpTo="@id/startFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/cakesListFragment"
+        android:name="my.CakeDelight.presentation.CakesListFragment"
+        android:label="fragment_cakes_list"
+        tools:layout="@layout/fragment_cakes_list" >
+        <action
+            android:id="@+id/action_cakesListFragment_to_cakesInfoFragment"
+            app:destination="@id/cakesInfoFragment"
+            app:popUpTo="@id/startFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_cakesListFragment_to_startFragment"
+            app:destination="@id/startFragment"
+            app:popUpTo="@id/startFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/cakesInfoFragment"
+        android:name="my.CakeDelight.presentation.CakesInfoFragment"
+        android:label="fragment_cakes_info"
+        tools:layout="@layout/fragment_cakes_info" >
+        <action
+            android:id="@+id/action_cakesInfoFragment_to_cakesListFragment"
+            app:destination="@id/cakesListFragment"
+            app:popUpTo="@id/startFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="my.CakeDelight.presentation.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_historyFragment_to_startFragment"
+            app:destination="@id/startFragment"
+            app:popUpTo="@id/startFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+</navigation>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CakeDelight</string>
+    <string name="back">Back</string>
+    <string name="cake_delight">Cake Delight</string>
+    <string name="recipe">Recipe</string>
+    <string name="exit">Exit</string>
+    <string name="history">History</string>
+    <string name="history_text">The history of cake dates back to ancient times.The first cakes were very different from what we eat today. They were more bread-like and sweetened with honey. Nuts and dried fruits were often added. According to the food historians, the ancient Egyptians were the first culture to show evidence of advanced baking skills. The Oxford English Dictionary traces the English word cake back to the 13th century. It is a derivation of kaka, an Old Norse word. Medieval European bakers often made fruitcakes and gingerbread. These foods could last for many months.</string>
+</resources>
